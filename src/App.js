@@ -7,7 +7,7 @@ function App() {
   const [todos, setTodos] = useState([])
   
   const addTodo = (todo) => {
-    setTodos([todo, ...todos])
+    setTodos([...todos, todo])
   }
 
   const completed = (id) => {
